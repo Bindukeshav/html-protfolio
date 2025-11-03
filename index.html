@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Navigation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0d6a32a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    /* Gradient background */
+    .gradient-background {
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    .navbar-brand {
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+
+    .nav-link {
+      font-size: 1rem;
+      color: #000;
+    }
+
+    .nav-link:hover {
+      color: #0d6efd;
+    }
+
+    /* Hero text */
+    .hero-section {
+      padding-top: 5rem;
+    }
+
+    .hero-section h1 {
+      font-weight: 700;
+      color: #000;
+    }
+
+    /* Search button styling */
+    .btn-search {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #ddd;
+    }
+
+    .btn-search:hover {
+      background-color: #0d6efd;
+      color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f8f9fa;
+      padding: 1rem 0;
+      text-align: center;
+      border-top: 1px solid #dee2e6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm">
+    <div class="container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+</svg>
+      <a class="navbar-brand" href="#">Campus Navigation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <!-- Dropdown under Home -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+              <li><a class="dropdown-item" href="#">🏫 Classrooms</a></li>
+              <li><a class="dropdown-item" href="#">📚 Library</a></li>
+              <li><a class="dropdown-item" href="#">👩‍🏫 Staff Rooms</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="gradient-background hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold mb-3">Find Your Way Around Campus</h1>
+          <p class="lead mb-4">Locate buildings, classrooms, and facilities with ease.</p>
+
+          <div class="input-group w-75">
+            <input type="text" class="form-control" placeholder="Search for a building or room...">
+            <button class="btn btn-search"><i class="fas fa-search"></i> Search</button>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center mt-4 mt-lg-0">
+          <img src="./images/campus-navigation-app.png" class="img-fluid rounded-4 shadow-lg" alt="Campus App"
+            width="400" height="400">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Campus Navigation | sai vidya institute</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
