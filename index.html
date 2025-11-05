@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Campus Navigation — SVIT</title>
 
-  
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
@@ -30,10 +30,15 @@
     }
 
     /* First Slide (Welcome) */
-    .first-slide {
-      background: url('./images/svit.jpg') center center / cover no-repeat;
-      position: relative;
-    }
+   .first-slide {
+  position: relative;
+  height: 100vh;
+  background: url('./images/svit.png') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
     .first-slide::before {
       content: "";
